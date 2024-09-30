@@ -1,0 +1,85 @@
+:root {
+  --color-primary: #16423c;
+  --color-secondary: #6a9c89;
+  --color-light: #c4dad2;
+  --color-bg: #e9efec;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-bg);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  background-color: var(--color-primary) !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-secondary) !important;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+footer a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-light);
+}
+
+.btn-primary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.card {
+  background-color: var(--color-light);
+  border: none;
+}
+
+.card-title {
+  color: var(--color-primary);
+}
+
+.card-subtitle {
+  color: var(--color-secondary);
+}
+
+.form-control:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 0.2rem rgba(106, 156, 137, 0.25);
+}
+
+.main-content {
+  flex: 1;
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+}

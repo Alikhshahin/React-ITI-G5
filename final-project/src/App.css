@@ -1,0 +1,57 @@
+:root {
+  --color-primary: #16423c;
+  --color-secondary: #6a9c89;
+  --color-light: #c4dad2;
+  --color-bg: #e9efec;
+  --color-white: #ffffff;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.navbar,
+.footer {
+  background-color: var(--color-primary) !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.footer {
+  color: var(--color-white) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.card {
+  background-color: var(--color-light);
+  border: none;
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-white);
+}
+
+a:hover {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
